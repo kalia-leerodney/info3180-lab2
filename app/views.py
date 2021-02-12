@@ -35,6 +35,17 @@ def send_text_file(file_name):
     file_dot_text = file_name + '.txt'
     return app.send_static_file(file_dot_text)
 
+@app.route('/profile')
+def profile():
+    date = format_date_joined()
+    return render_template('profile.html' , thedate = date)
+
+import datetime
+def format_date_joined():
+    #now = datetime.datetime.now()
+    date_joined = datetime.date(2018, 2, 7)
+    return "Joined "  + date_joined.strftime("%B, %Y")
+
 
 @app.after_request
 def add_header(response):

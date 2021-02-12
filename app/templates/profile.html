@@ -1,0 +1,50 @@
+
+        {% extends "base.html" %}
+        {% block main %}
+        <div id=body>
+
+            <div id="header">
+                <img src="{{url_for('static', filename='download.png')}}">
+                <h1> Kalia-Lee Rodney </h1>
+                <p> @kaliarodney </p>
+                <p> Kingston ,Jamaica</p>
+                <p> {{ thedate }} </p>
+            </div>
+            <p id="bio">
+                I am 20 years old.  I attend The University of the West Indies pursuing a major in Computer
+                Science. I like to watch Youtube videos and Netflix. I am interested in Web Development because 
+                I want to learn new languages and learn more about websites and I hope to use these tools to 
+                contribute to my society.I am interested in becoming a data scientist or an AI Researcher in the future.
+            </p>
+    
+            <div class="Stat">
+    
+                <div>
+                    <h4> 7 </h4>
+                    <p> Posts</p>
+                </div>
+    
+                <div>
+                    <h4> 100 </h4>
+                    <p> Following </p>
+                </div>
+    
+                <div>
+    
+                <h4> 250 </h4>
+                <p> Followers </p>
+    
+                </div>
+               
+            </div>
+            
+            <div id=btn>
+                <button type="button"> Follow </button>
+    
+            </div>
+            
+
+        </div>
+        
+        {% endblock %}
+    

@@ -1,3 +1,68 @@
 body {
     padding-top: 5rem;
 }
+
+#body{
+    border:1px solid black;
+    padding-bottom:10px;
+}
+
+#header{
+    background-color: #ce897b;
+    text-align:center;
+   
+}
+img{
+  border-radius:50%;
+  height:210px;
+  width:210px;
+  margin:40px;
+  margin-top:20px;
+}
+
+#bio{
+    text-align:center;
+}
+
+
+
+
+.Stat{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+   
+}
+
+.Stat div{
+    margin-right:20px;
+   
+  
+    
+}
+
+.Stat h4{
+    padding-top:5px;
+    text-align:center;
+    justify-content:center;
+    
+}
+
+/*.Stat{
+    text-align:center;
+}*/
+
+#btn{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+
+button{
+    background-color:#e4a199;
+    width:25%;
+    border-radius:10px;
+}
